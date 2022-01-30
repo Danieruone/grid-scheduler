@@ -1,35 +1,45 @@
 export const daysWeek = [
   {
-    name: 'Monday',
+    id: 1,
+    name: 'Mon',
   },
   {
-    name: 'Tuesday',
+    id: 2,
+    name: 'Tu',
   },
   {
-    name: 'Wednesday',
+    id: 3,
+    name: 'We',
   },
   {
-    name: 'Thursday',
+    id: 4,
+    name: 'Th',
   },
   {
-    name: 'Friday',
+    id: 5,
+    name: 'Fr',
   },
   {
-    name: 'Saturday',
+    id: 6,
+    name: 'Sa',
   },
   {
-    name: 'Sunday',
+    id: 7,
+    name: 'Su',
   },
 ];
 
 export const timesWeek = [
   {
+    id: 1,
     name: 'Morning',
   },
   {
+    id: 2,
     name: 'Afternoon',
   },
   {
+    id: 3,
     name: 'Night',
   },
 ];

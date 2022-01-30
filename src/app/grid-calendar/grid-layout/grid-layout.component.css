@@ -3,19 +3,19 @@ table {
 }
 
 th {
-  padding: 2rem;
+  padding: 0.5rem;
   width: 50px;
   height: 50px;
   max-width: 50px;
-  text-align: left;
+  text-align: center;
   border: none;
 }
 
 td {
-  padding: 2rem;
   border: 1px solid #e6e6e6;
-  width: 50px;
-  height: 50px;
+  width: 100px;
+  height: 100px;
+  padding: 0.3rem;
 }
 
 td:hover {
