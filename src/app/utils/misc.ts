@@ -36,10 +36,18 @@ export const timesWeek = [
   },
   {
     id: 2,
-    name: 'Afternoon',
+    name: 'Late morning',
   },
   {
     id: 3,
+    name: 'Afternoon',
+  },
+  {
+    id: 4,
+    name: 'Late afternoon',
+  },
+  {
+    id: 5,
     name: 'Night',
   },
 ];

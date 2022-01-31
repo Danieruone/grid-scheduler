@@ -6,7 +6,9 @@
     </tr>
 
     <tr *ngFor="let time of times">
-      <td>{{ time.name }}</td>
+      <td>
+        <span>{{ time.name }}</span>
+      </td>
       <td *ngFor="let day of days">
         <app-cell-item
           [cellData]="{ day: day.id, time: time.id }"
