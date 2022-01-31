@@ -5,10 +5,16 @@ import { AppComponent } from './app.component';
 
 // custom
 import { GridCalendarModule } from './grid-calendar/grid-calendar.module';
+import { TasksListModule } from './tasks-list/tasks-list.module';
 
 @NgModule({
   declarations: [AppComponent],
-  imports: [BrowserModule, AppRoutingModule, GridCalendarModule],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    GridCalendarModule,
+    TasksListModule,
+  ],
   providers: [],
   bootstrap: [AppComponent],
 })

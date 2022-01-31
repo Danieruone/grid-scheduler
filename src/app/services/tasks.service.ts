@@ -18,6 +18,7 @@ export class TasksService {
 
   public addTask(task: Task) {
     this.tasks.push(task);
+    this.onUpdateTask.emit(this.tasks);
   }
 
   public deleteTask(task: Task) {
