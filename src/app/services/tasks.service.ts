@@ -10,8 +10,8 @@ export class TasksService {
   @Output() onUpdateTask: EventEmitter<Task[]> = new EventEmitter();
 
   public tasks: Task[] = [
-    { day: 1, time: 1, name: 'tarea 1' },
-    { day: 5, time: 3, name: 'tarea 2' },
+    { day: 1, time: 1, name: 'task 1' },
+    { day: 5, time: 3, name: 'task 2' },
   ];
 
   constructor() {}
