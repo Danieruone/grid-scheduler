@@ -7,4 +7,11 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
+}
+
+.close-button {
+  position: absolute;
+  top: 0px;
+  right: 10px;
 }

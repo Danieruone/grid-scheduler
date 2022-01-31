@@ -1,3 +1,6 @@
-<div class="card-container" *ngIf="taskName !== ''">
-  <span>{{ taskName }}</span>
+<div class="card-container" *ngIf="task">
+  <span>{{ task.name }}</span>
+  <div class="close-button" (click)="deleteTask()">
+    <span>x</span>
+  </div>
 </div>

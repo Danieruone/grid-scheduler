@@ -1,11 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 
 // utils
-import { daysWeek } from '../../utils/misc';
-import { timesWeek } from '../../utils/misc';
+import { daysWeek } from 'src/app/utils/misc';
+import { timesWeek } from 'src/app/utils/misc';
 
 // types
-import { WeekCell } from '../../types/week-cell.type';
+import { WeekCell } from 'src/app/types/week-cell.type';
 
 @Component({
   selector: 'app-grid-layout',
