@@ -1,4 +1,8 @@
-import { Component, OnInit, Input, OnDestroy } from '@angular/core';
+import { Component, OnInit, Input, OnDestroy, Inject } from '@angular/core';
+import { MatDialog } from '@angular/material/dialog';
+
+// componments
+import { CreateTaskFormComponent } from 'src/app/grid-calendar/create-task-form/create-task-form.component';
 
 // services
 import { TasksService } from 'src/app/services/tasks.service';
@@ -14,11 +18,9 @@ import { Task } from 'src/app/types/task.type';
 })
 export class CellItemComponent implements OnInit, OnDestroy {
   @Input() cellData!: CellData;
-  subscription: any;
-
   task!: Task;
 
-  constructor(public taskService: TasksService) {}
+  constructor(public taskService: TasksService, public dialog: MatDialog) {}
 
   ngOnInit(): void {
     this.updateTasks();
@@ -42,5 +44,23 @@ export class CellItemComponent implements OnInit, OnDestroy {
 
   deleteTask() {
     this.taskService.deleteTask(this.task);
+  }
+
+  addTask(taskName: string) {
+    this.taskService.addTask({
+      day: this.cellData.day,
+      time: this.cellData.time,
+      name: taskName,
+    });
+  }
+
+  openDialog() {
+    const dialogRef = this.dialog.open(CreateTaskFormComponent);
+
+    dialogRef.afterClosed().subscribe((result) => {
+      if (result && result !== 'false') {
+        this.addTask(result);
+      }
+    });
   }
 }

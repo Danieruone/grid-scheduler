@@ -1,6 +1,8 @@
 <div class="card-container" *ngIf="task">
-  <span>{{ task.name }}</span>
+  <span class="name_text">{{ task.name }}</span>
   <div class="close-button" (click)="deleteTask()">
     <span>x</span>
   </div>
 </div>
+
+<div class="empty-container" *ngIf="!task" (click)="openDialog()"></div>

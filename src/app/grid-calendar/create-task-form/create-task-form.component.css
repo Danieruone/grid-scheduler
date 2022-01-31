@@ -1,0 +1,9 @@
+input {
+  padding: 1rem;
+}
+
+.buttons-container {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+}
